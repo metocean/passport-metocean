@@ -41,12 +41,12 @@ Examples:
 ###
 Strategy = (options, verify) ->
 	options = options or {}
-	options.authorizationURL = options.authorizationURL or 'http://localhost:3233/odo/auth/oauth2/authorize'
-	options.tokenURL = options.tokenURL or 'http://localhost:3233/odo/auth/oauth2/token'
+	options.authorizationURL = options.authorizationURL or 'http://mov.thomas.dev/odo/auth/oauth2/authorize'
+	options.tokenURL = options.tokenURL or 'http://mov.thomas.dev/odo/auth/oauth2/token'
 	OAuth2Strategy.call this, options, verify
 	@name = 'metocean'
 	@_clientSecret = options.clientSecret
-	@_profileURL = options.profileURL or 'http://localhost:3233/odo/auth/oauth2/profile'
+	@_profileURL = options.profileURL or 'http://mov.thomas.dev/odo/auth/oauth2/profile'
 	
 
 # Inherit from `OAuth2Strategy`
