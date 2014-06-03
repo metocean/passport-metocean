@@ -83,6 +83,7 @@ Strategy::userProfile = (accessToken, done) ->
 		profile.provider = 'metocean'
 		profile._raw = body
 		profile._json = json
+		profile.accessToken = accessToken
 		done null, profile
 
 # Expose `Strategy`
